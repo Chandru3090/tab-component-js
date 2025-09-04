@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab Component developed using pure JavaScript</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .active {
+        background-color: #3b82f6;
+        border-color: #3b82f6;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200 min-h-screen">
+    <div class="mx-auto p-4">
+      <header class="w-full mb-4">
+        <h1 class="text-2xl font-medium mb-2">JavaScript</h1>
+        <p class="text-justify">
+          JavaScript is a imperative Programming Language, we need to pass step
+          by step instruction to development
+        </p>
+      </header>
+      <div>
+        <menu class="flex gap-2">
+          <button
+            id="whyJs"
+            data-tab="0"
+            class="border-t border-l border-r p-2 rounded-tl-sm rounded-tr-sm"
+          >
+            Why JavaScript
+          </button>
+          <button
+            id="whatJs"
+            data-tab="1"
+            class="border-t border-l border-r p-2 rounded-tl-sm rounded-tr-sm"
+          >
+            Core Features
+          </button>
+          <button
+            id="resources"
+            data-tab="2"
+            class="border-t border-l border-r p-2 rounded-tl-sm rounded-tr-sm"
+          >
+            Related Resources
+          </button>
+        </menu>
+        <div id="content" class="border p-2"></div>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
